@@ -1,0 +1,13 @@
+TP Ingeniería de Datos - "Salud Corporativa del Sur S.A." (empresa tercerizada de salud)
+Base de datos: SaludCorporativa (SQL Server 2019/2022)
+
+Ejecutar en SSMS en este orden (cada archivo completo, con F5):
+
+  01_creacion_bd_y_tablas.sql   Crea la base y las 9 tablas (modelo en 3FN) con PK, FK, UNIQUE y CHECK.
+  02_insercion_datos.sql        Carga los datos de prueba (12 turnos).
+  03_vistas.sql                 Queries 1 a 3: vw_AgendaTurnos, vw_ImportePorTurno, vw_FacturacionObraSocial.
+  04_subconsultas.sql           Queries 4 y 5: consultas con subconsultas.
+  05_procedimientos.sql         Queries 6 a 10: 5 stored procedures (4 con transacción y TRY/CATCH) y sus pruebas.
+
+Para empezar de cero, volver a ejecutar desde el 01 (borra y recrea la base).
+Las pruebas del 05 modifican datos (crean el turno 13, cancelan el 12 y agregan una práctica al 10).
